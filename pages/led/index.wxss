@@ -1,0 +1,32 @@
+page{ background-color: black;color: #F8F4FF;font-size: 24rpx;}
+.main { width: 100vh;height: 100vw;overflow: hidden;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%) rotate(90deg); line-height: 1;}
+.text { padding-left: 100vh;position: absolute;top: 47%;left: 0;white-space: nowrap;}
+.po-f{ position: fixed;}
+.fc-row{ display: flex;}
+.fc-space-around{ justify-content: space-around;}
+.icon-60{ width: 60rpx;height: 60rpx;}
+.icon-48{ width: 48rpx;height: 40rpx;line-height: 40rpx;text-align: center}
+.c-8b{ color: #8B65FF;}
+.clear{ clear: both;}
+.fz-30{  font-size: 30rpx;}
+.mt-30{ margin-top: 30rpx;}
+.mb-20{ margin-bottom: 20rpx;}
+.ml-30{ margin-left: 30rpx;}
+.mr-30{ margin-right: 30rpx;}
+.pt-20{ padding-top: 20rpx;}
+.p-6-12{ padding: 6rpx 12rpx;}
+.b-2-ff{ border: 2rpx solid #FFFFFF;}
+.br-4{ border-radius: 4rpx;}
+.b-40{ bottom: 40rpx;left: 30rpx;z-index: 2}
+.b-40 input{ width: 548rpx;color: #ffffff;background-color: #19191A;height: 40rpx;line-height: 40rpx;padding: 20rpx;margin-right: 10rpx;font-size:28rpx;caret-color: #7452D3;min-height: 0;}
+.b-40 .template-btn{ background-color: #1F1E20;width: 92rpx;}
+.template-btn,.text-item{ text-align: center;line-height: 80rpx;height: 80rpx;}
+.nav-back{left: 32rpx;}
+.template{ width:100vw;height:720rpx;background:rgba(0,0,0,0.8);bottom: 0;z-index: 3;}
+.h-342{ height: 342rpx;overflow: scroll;-webkit-overflow-scrolling: touch;}
+.fr{ float: right;}
+.rolling4{ animation: rolling4 0.2s ease-out;}
+@keyframes rolling4 {
+  0% { height: 0rpx;}
+  100% { height: 720rpx;}
+}

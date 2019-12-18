@@ -1,0 +1,23 @@
+<view class="main" catchtap="click">
+  <text class="text" animation="{{scorll}}" style='color:{{colorList[cIndex]}};font-size:{{fontSize}}px;margin-top:-{{fontSize/2}}px'>{{text}}</text>
+</view>
+<view class="po-f template {{isShow?'rolling4':''}} pt-20" wx:if="{{isShow}}">
+  <view class="b-2-ff br-4 w-f fr mr-30 p-6-12" catchtap="confirm">确定</view>
+  <view class="clear"></view>
+  <view class="hl-34 mt-10 mb-20 ml-30">字体颜色</view>
+  <view class="fc-row fc-space-around">
+    <view class="icon-60 {{cIndex==index?'b-2-ff':''}}" wx:for="{{colorList}}" wx:key="key" style="background-color:{{item}}" catchtap="selectC" data-index="{{index}}"></view>
+  </view>
+  <view class="hl-34 mt-30 mb-20 ml-30">文字速度</view>
+  <view class="fc-row fc-space-around">
+    <view class="icon-48 {{sIndex==index?'b-2-ff':''}}" wx:for="{{speedList}}" wx:key="key" catchtap="selectS" data-index="{{index}}">{{item}}</view>
+  </view>
+  <view class="hl-34 mt-30 mb-20 ml-30">文字模板</view>
+  <view class="h-342">
+    <view class="text-item fz-30 {{tIndex==index?'c-8b':''}}" wx:for="{{textList}}" wx:key="key" catchtap="selectT" data-index="{{index}}">{{item}}</view>
+  </view>
+</view>
+<view class="po-f b-40 fc-row" wx:if="{{isWrite}}">
+  <input confirm-type="send" type="text" bindconfirm="send" placeholder="输入文字"></input>
+  <view class="template-btn" catchtap="open">模板</view>
+</view>
